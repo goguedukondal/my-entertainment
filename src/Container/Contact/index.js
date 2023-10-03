@@ -7,7 +7,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import "./style.css";
 const ContactContainer = () => {
   const myData = [
-    ,
+    
     {
       name: "Linkedin",
       link: "https://www.linkedin.com/in/edukondal-gogu-030397222/",
