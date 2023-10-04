@@ -45,7 +45,7 @@ const DetailsContainer = ()=>{
         try{
           const {data} = await axios.get(`https://api.themoviedb.org/3/${_media_type}/${id}/credits?api_key=${API_KEY}&language=en-US`);
           setCredits(data.cast);
-          console.log('sdata',  data);
+          console.log('data',  data);
         }catch(error){
           console.error(error)
         }
@@ -59,12 +59,12 @@ const DetailsContainer = ()=>{
     }, [])
 
     const renderDataHtml = ()=>{
-        const ImageURL = content.poster_path ? img_300 + content.poster_path : img_not_available;
-        const tagline = content.tagline || '';
-        const vote_average = parseInt(content.vote_average);
-        const original_language = content.original_language || '';
-        const adult = !content.adult ? '10+' : '18+';
-        const origin_country = content.origin_country && content.origin_country[0] ? content.origin_country[0] : content.production_countries && content.production_countries[0] && content.production_countries[0].name ? content.production_countries[0].name : '';
+        const ImageURL = content.poster_path ? img_300 + content.poster_path : img_not_available;//poster
+        const tagline = content.tagline || '';//tagline
+        const vote_average = parseInt(content.vote_average);//vote
+        const original_language = content.original_language || '';//language
+        const adult = !content.adult ? '10+' : '18+';//adult
+        const origin_country = content.origin_country && content.origin_country[0] ? content.origin_country[0] : content.production_countries && content.production_countries[0] && content.production_countries[0].name ? content.production_countries[0].name : '';//country name
         const overview = content.overview;
         const first_air_date = content.first_air_date || content.release_date;
         const  budget = content.budget || '';
@@ -119,14 +119,7 @@ const DetailsContainer = ()=>{
                 </Col>
                 <Col className='col-12 col-xl-6'>
                     <div className='frameSec'>
-                        {/* <a rel="noreferrer" target="_blank" href={`https://www.youtube.com/watch?v=${video}`}>
-                            <figure className="youtubeImage">
-                                <span className='imageSec'>
-                                    <img src={videoBgPoster} alt="" title="" />
-                                </span>
-                                <span className='iconYoutube'></span>
-                            </figure>
-                        </a> */}
+                        
                         <iframe width="560" height="315" src={`https://www.youtube.com/embed/${video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </Col>

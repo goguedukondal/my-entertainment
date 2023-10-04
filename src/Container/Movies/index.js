@@ -21,6 +21,7 @@ const  MoviesContainer = ()=>{
 
     
     const genreforURL = useGenres(selectedGenres)
+    // console.log(genreforURL)
     const GetDataTrending = async ()=>{
         
         const {data} = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&page=${pageno}&with_genres=&language=en-US&with_genres=${genreforURL}`)

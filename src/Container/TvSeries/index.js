@@ -27,7 +27,7 @@ const  TvSeriesContainer = ()=>{
         setContent(data.results);
         setPaginationno(data.total_pages);
     }
-
+    // const url = 'https://api.themoviedb.org/3/genre/movie/list?language=en';
     useEffect(()=>{
         console.log('Trending Component did mount');
         GetDataTrending();

@@ -12,7 +12,7 @@ const  SearchContainer = ()=>{
     const [pageno, setPageno] = useState(1);
     const [paginationno, setPaginationno] = useState(0);
 
-    const [searchValue, setSearchValue] = useState('crime');
+    const [searchValue, setSearchValue] = useState('comedy');
     const [typeValue, setTypeValue] = useState('movie');
     const API_KEY ="e12e67ad855da6f4d26366329c3d3764";
 
