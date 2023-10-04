@@ -73,33 +73,21 @@ body {
   position: relative;
 }
 .video-thumb .video-image:after {
-  content: "";
+  /* content: ""; */
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 0;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -ms-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  
   opacity: 0;
   background: black;
-  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.0018382353) 0%, black 100%);
-  background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.0018382353) 0%, black 100%);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0018382353) 0%, black 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 .video-thumb .video-image img {
   width: 100%;
   display: block;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -ms-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  
 }
 .video-thumb .video-image .hd {
   height: 20px;
@@ -114,11 +102,7 @@ body {
   bottom: 20px;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -ms-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  
   text-transform: uppercase;
 }
 .video-thumb .video-image .hd b {
@@ -139,11 +123,7 @@ body {
   z-index: 1;
   text-align: center;
   font-weight: 600;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -ms-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  
   opacity: 0;
 }
 .video-thumb .video-image .circle-rate .circle-chart__circle:last-child {
@@ -156,7 +136,7 @@ body {
   display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1;
   color: #fff;
 }
 .video-thumb .video-image .circle-rate svg {
