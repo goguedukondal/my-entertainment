@@ -21,6 +21,7 @@
     border:0;
     display: block;
     color: rgba(255,255,255,0.5);
+   
     text-align: center;
     border-radius: 4px;
     line-height: 35px;
@@ -46,19 +47,7 @@
     vertical-align: top;
     margin-right: 10px;
 }
-.socialIconsList li a{
-    color: #fff;
-    font-weight: 500;
-    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
-    box-shadow: 0 0 20px 0 rgb(255 88 96 / 50%);
-    display: block;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-.socialIconsList li a:hover{
-    background:#fff;
-    color: #ff5860;
-}
+
 .head_3{
     text-align: center;
     margin: 0;
